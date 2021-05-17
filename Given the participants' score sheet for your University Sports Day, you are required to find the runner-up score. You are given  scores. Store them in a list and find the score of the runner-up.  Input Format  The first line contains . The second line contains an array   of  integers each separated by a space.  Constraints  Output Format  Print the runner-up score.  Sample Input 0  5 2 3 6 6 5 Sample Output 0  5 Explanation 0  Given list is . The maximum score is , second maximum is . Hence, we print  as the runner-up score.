@@ -1,0 +1,7 @@
+from collections import OrderedDict
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+v=list(OrderedDict.fromkeys(arr))
+v.sort()
+print(v[-2])
